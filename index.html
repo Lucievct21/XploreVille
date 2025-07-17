@@ -1,16 +1,138 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore villes</title>
+  <link href="style.css" rel="stylesheet"/>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <!-- PAGE 1 : accueil -->
+  <section id="start-page">
+    <h1>Explore villes</h1>
+    <div>
+      <label id="language-label" for="language-select">Langue :</label>
+      <select id="language-select">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+        <option value="it">Italiano</option>
+      </select>
+    </div>
+    <div id="chapter-list"></div>
+  </section>
 
+  <!-- PAGE 2 : introduction d'un chapitre -->
+  <section id="intro-page" style="display:none">
+    <h2 id="intro-title"></h2>
+    <audio id="intro-audio" controls></audio>
+    <pre id="intro-text"></pre>
+    <button id="back-to-home-1" class="btn-bottom-left btn-icon">🏠</button>
+    <button id="go-to-number-page" class="btn-bottom-right">Démarrer balade</button>
+  </section>
+
+  <!-- PAGE 3 : liste des numéros -->
+  <section id="number-page" style="display:none">
+    <h2 id="number-title"></h2>
+    <div>
+      <label id="number-label" for="section-number">Numéro audio :</label>
+      <input type="number" id="section-number" class="number-input-center" />
+      <button id="load-section" class="btn-answer-center btn-small">OK</button>
+    </div>
+    <button id="back-to-home-2" class="btn-bottom-left btn-icon">🏠</button>
+  </section>
+
+  <!-- PAGE 4 : contenu d'une section -->
+  <section id="section-page" style="display:none">
+    <h2 id="section-title"></h2>
+    <audio id="section-audio" controls></audio>
+    <pre id="section-text"></pre>
+    <button id="back-to-number-page" class="btn-bottom-left btn-icon">🔢</button>
+    <button id="secret-button" class="btn-bottom-right" style="display:none">Balade secrète</button>
+    <button id="go-to-end-page" class="btn-bottom-right" style="display:none"></button>
+  </section>
+
+  <!-- PAGE 5 : fin de chapitre -->
+  <section id="end-page" style="display:none">
+    <h2 id="end-title"></h2>
+    <audio id="end-audio" controls></audio>
+    <pre id="end-text"></pre>
+    <button id="back-to-home-3" class="btn-bottom-center btn-icon">🏠</button>
+  </section>
+
+  <!-- PAGE secrète A -->
+  <section id="secret-a-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Entre avec respect, liberté et courage…</pre>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+    <button id="to-secret-b" class="btn-answer-center">Je suis entré.</button>
+  </section>
+
+  <!-- PAGE secrète B -->
+  <section id="secret-b-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Bienvenue dans la "città dell'altra economia" ou cité de l'économie alternative etc... énigme à trouver. Combien de crochets apperçois-tu ? Pour l'instant la bonne réponse est 0.</pre>
+    <input type="number" id="secret-b-answer"/>
+    <button id="check-secret-b-answer" class="btn-answer-center btn-small">OK</button>
+    <p id="secret-b-feedback"></p>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+  </section>
+
+  <!-- PAGE secrète C -->
+  <section id="secret-c-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Traverse le passage sous le bovin et continue ton chemin le long des amphores. Après l'invasion américaine, tourne à gauche.</pre>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+    <button id="to-secret-d" class="btn-answer-center">J'ai tourné.</button>
+  </section>
+
+  <!-- PAGE secrète D -->
+  <section id="secret-d-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Sur le mur d'en face, celle qui a éduqué les fondateurs de la ville éternelle.</pre>
+    <input type="text" id="secret-d-answer" />
+    <button id="check-secret-d-answer" class="btn-answer-center btn-small">OK</button>
+    <p id="secret-d-feedback"></p>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+  </section>
+
+  <!-- PAGE secrète E -->
+  <section id="secret-e-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Tu es juste à côté du marché de Testaccio ! N'hésite pas y faire une petite pause gourmande et reviens à ta position. <br> Tourne le dos aux amphores et avance, Nord toute, jusqu'à atteindre les confins du territoire.</pre>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+    <button id="to-secret-f"class="btn-answer-center">Je suis au bord.</button>
+  </section>
+
+  <!-- PAGE secrète F -->
+  <section id="secret-f-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>On se trouve sur le lungotevere qui borde le Tibre et délimite le quartier de Testaccio à l'Ouest et au Nord. <br> Suis le cours d'eau en direction des drapeaux et avance jusqu'à la via... charade à ajouter. Pour l'instant la réponse est "charade".</pre>
+    <input type="text" id="secret-f-answer" />
+    <button id="check-secret-f-answer" class="btn-answer-center btn-small">OK</button>
+    <p id="secret-f-feedback"></p>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+  </section>
+
+  <!-- PAGE secrète G -->
+  <section id="secret-g-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Emprunte cette rue vers le Porticus Aemilia. Combien de clous pour le maintenir debout ? Pour l'instant la bonne réponse est 0.</pre>
+    <input type="number" id="secret-g-answer" />
+    <button id="check-secret-g-answer" class="btn-answer-center btn-small">OK</button>
+    <p id="secret-g-feedback"></p>
+    <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+  </section>
+
+  <!-- PAGE secrète H -->
+  <section id="secret-h-page" class="secret-section" style="display:none">
+    <h2 class="secret-title">Testaccio - parcours secret</h2>
+    <pre>Bravo ! Tu es arrivé à la fin de cette aventure secrète. Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice où t'attend la fin de la balade.</pre>
+    <button class="back-to-numbers btn-bottom-center btn-icon">🔢</button>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="views.js"></script>
+  <script src="player.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
