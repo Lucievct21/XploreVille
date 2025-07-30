@@ -24,11 +24,13 @@ const toSecretBBtn = document.getElementById("to-secret-b");
 const checkSecretBAnswerBtn = document.getElementById("check-secret-b-answer");
 const secretBAnswerInput = document.getElementById("secret-b-answer");
 const secretBFeedback = document.getElementById("secret-b-feedback");
-const toSecretDBtn = document.getElementById("to-secret-d");
-const checkSecretDAnswerBtn = document.getElementById("check-secret-d-answer");
-const secretDAnswerInput = document.getElementById("secret-d-answer");
-const secretDFeedback = document.getElementById("secret-d-feedback");
-const toSecretFBtn = document.getElementById("to-secret-f");
+const checkSecretCAnswerBtn = document.getElementById("check-secret-c-answer");
+const secretCAnswerInput = document.getElementById("secret-c-answer");
+const secretCFeedback = document.getElementById("secret-c-feedback");
+const toSecretEBtn = document.getElementById("to-secret-e");
+const checkSecretEAnswerBtn = document.getElementById("check-secret-e-answer");
+const secretEAnswerInput = document.getElementById("secret-e-answer");
+const secretEFeedback = document.getElementById("secret-e-feedback");
 const checkSecretFAnswerBtn = document.getElementById("check-secret-f-answer");
 const secretFAnswerInput = document.getElementById("secret-f-answer");
 const secretFFeedback = document.getElementById("secret-f-feedback");
@@ -118,13 +120,12 @@ loadSectionBtn.addEventListener("click", () => {
 // boutons pages secrètes
 secretButton.addEventListener("click", showSecretAPage);
 toSecretBBtn.addEventListener("click", showSecretBPage);
-toSecretDBtn.addEventListener("click", showSecretDPage);
-toSecretFBtn.addEventListener("click", showSecretFPage);
+toSecretEBtn.addEventListener("click", showSecretEPage);
 
 // énigme page secrète B
 checkSecretBAnswerBtn.addEventListener("click", () => {
   const answer = parseInt(secretBAnswerInput.value);
-  if (answer === 0) {
+  if (answer === 7) {
     showSecretCPage();
   } else {
     if (currentLanguage === "en"){
@@ -133,41 +134,90 @@ checkSecretBAnswerBtn.addEventListener("click", () => {
     else if (currentLanguage === "it"){
       secretBFeedback.textContent = "Risposta sbagliata, riprova!";
       }
-    else (currentLanguage === "it"){
+    else {
       secretBFeedback.textContent = "Mauvaise réponse, essaye encore !";
       }
   }
 });
 
-// énigme page secrète D
-checkSecretDAnswerBtn.addEventListener("click", () => {
-  const answer = secretDAnswerInput.value.toLowerCase();
-  if (answer === "louve") {
-    showSecretEPage();
+// énigme page secrète C
+checkSecretCAnswerBtn.addEventListener("click", () => {
+  const answer = parseInt(secretCAnswerInput.value);
+  if (answer === 1887) {
+    showSecretDPage();
   } else {
-    secretDFeedback.textContent = "Mauvaise réponse, essaye encore !";
+    if (currentLanguage === "en"){
+      secretCFeedback.textContent = "Wrong answer, try again!";
+      }
+    else if (currentLanguage === "it"){
+      secretCFeedback.textContent = "Risposta sbagliata, riprova!";
+      }
+    else {
+      secretCFeedback.textContent = "Mauvaise réponse, essaye encore !";
+      }
+  }
+});
+
+// énigme page secrète E
+checkSecretEAnswerBtn.addEventListener("click", () => {
+  const answer = secretEAnswerInput.value.toLowerCase();
+  if (currentLanguage === "fr"){
+    if (answer === "louve"){
+      showSecretFPage();
+    } else {
+        secretEFeedback.textContent = "Mauvaise réponse, essaye encore !";
+        }
+  } else if (currentLanguage === "en"){
+    if (answer === "walf"){
+        showSecretFPage();
+    } else {
+        secretEFeedback.textContent = "Wrong answer, try again!";
+        }
+  } else if (currentLanguage === "it"){
+    if (answer === "lupa"){
+        showSecretFPage();
+    } else {
+        secretEFeedback.textContent = "Risposta sbagliata, riprova!";
+        }
   }
 });
 
 // énigme page secrète F
 checkSecretFAnswerBtn.addEventListener("click", () => {
   const answer = secretFAnswerInput.value.toLowerCase();
-  if (answer === "charade") {
+  if (answer === "greenwich") {
     showSecretGPage();
   } else {
-    secretDFeedback.textContent = "Mauvaise réponse, essaye encore !";
+    if (currentLanguage === "en"){
+      secretFFeedback.textContent = "Wrong answer, try again!";
+      }
+    else if (currentLanguage === "it"){
+      secretFFeedback.textContent = "Risposta sbagliata, riprova!";
+      }
+    else {
+      secretFFeedback.textContent = "Mauvaise réponse, essaye encore !";
+      }
   }
 });
 
 // énigme page secrète G
 checkSecretGAnswerBtn.addEventListener("click", () => {
-  const answer = parseInt(secretGAnswerInput.value);
-  if (answer === 0) {
+  const answer = secretGAnswerInput.value.toLowerCase();
+  if (answer === "nicola") {
     showSecretHPage();
   } else {
-    secretGFeedback.textContent = "Mauvaise réponse, essaye encore !";
+    if (currentLanguage === "en"){
+      secretGFeedback.textContent = "Wrong answer, try again!";
+      }
+    else if (currentLanguage === "it"){
+      secretGFeedback.textContent = "Risposta sbagliata, riprova!";
+      }
+    else {
+      secretGFeedback.textContent = "Mauvaise réponse, essaye encore !";
+      }
   }
 });
+
 
 
 // initialisation

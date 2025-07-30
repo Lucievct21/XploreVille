@@ -33,6 +33,17 @@ const endTitle = document.getElementById("end-title");
 const endAudio = document.getElementById("end-audio");
 const endText = document.getElementById("end-text");
 
+// secret pages
+const secretTitles = document.querySelectorAll(".secret-title");
+const secretAText = document.getElementById("secret-a-text");
+const secretBText = document.getElementById("secret-b-text");
+const secretCText = document.getElementById("secret-c-text");
+const secretDText = document.getElementById("secret-d-text");
+const secretEText = document.getElementById("secret-e-text");
+const secretFText = document.getElementById("secret-f-text");
+const secretGText = document.getElementById("secret-g-text");
+const secretHText = document.getElementById("secret-h-text");
+
 // pages
 function hideAllPages() {
   startPage.style.display = "none";
@@ -80,7 +91,7 @@ function showSectionPage(section, lang, chapterTitle) {
   fetch(section.textFile[lang])
     .then(resp => resp.text())
     .then(text => {
-      sectionText.textContent = text;
+      sectionText.innerHTML = text;
     })
     .catch(() => {
       sectionText.textContent = "Impossible de charger le texte.";
@@ -114,11 +125,20 @@ function showChapterEndPage(chapter, lang) {
 function showSecretAPage() {
   hideAllPages();
   secretAPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretAText.innerHTML = secretWalkTestaccio.pageAEnigma[currentLanguage];
+  toSecretBBtn.textContent = secretWalkTestaccio.pageAButton[currentLanguage];
 }
 
 function showSecretBPage() {
   hideAllPages();
   secretBPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretBText.innerHTML = secretWalkTestaccio.pageBEnigma[currentLanguage];
   secretBAnswerInput.value = "";
   secretBFeedback.textContent = "";
 }
@@ -126,23 +146,43 @@ function showSecretBPage() {
 function showSecretCPage() {
   hideAllPages();
   secretCPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretCText.innerHTML = secretWalkTestaccio.pageCEnigma[currentLanguage];
+  secretCAnswerInput.value = "";
+  secretCFeedback.textContent = "";
 }
 
 function showSecretDPage() {
   hideAllPages();
   secretDPage.style.display = "block";
-  secretDAnswerInput.value = "";
-  secretDFeedback.textContent = "";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretDText.innerHTML = secretWalkTestaccio.pageDEnigma[currentLanguage];
+  toSecretEBtn.textContent = secretWalkTestaccio.pageDButton[currentLanguage];
 }
 
 function showSecretEPage() {
   hideAllPages();
   secretEPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretEText.innerHTML = secretWalkTestaccio.pageEEnigma[currentLanguage];
+  secretEAnswerInput.value = "";
+  secretEFeedback.textContent = "";
 }
+
 
 function showSecretFPage() {
   hideAllPages();
   secretFPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretFText.innerHTML = secretWalkTestaccio.pageFEnigma[currentLanguage];
   secretFAnswerInput.value = "";
   secretFFeedback.textContent = "";
 }
@@ -150,6 +190,10 @@ function showSecretFPage() {
 function showSecretGPage() {
   hideAllPages();
   secretGPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretGText.innerHTML = secretWalkTestaccio.pageGEnigma[currentLanguage];
   secretGAnswerInput.value = "";
   secretGFeedback.textContent = "";
 }
@@ -157,4 +201,8 @@ function showSecretGPage() {
 function showSecretHPage() {
   hideAllPages();
   secretHPage.style.display = "block";
+  secretTitles.forEach(title => {
+    title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
+  });
+  secretHText.innerHTML = secretWalkTestaccio.pageHEnding[currentLanguage];
 }

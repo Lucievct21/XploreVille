@@ -1,3 +1,0 @@
-Test fichier texte
-Coucou je suis un fichier texte avec plusieurs ligne.
-Il y a meme de la ponctuation et des nombres !!! 123 

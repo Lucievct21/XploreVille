@@ -11,13 +11,20 @@ body {
 
 /* Section encadrée */
 section {
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #eeeeee;
   max-width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  
+  /* Ajouts pour scroll */
+  position: relative;
+  height: 90dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Style pour la section des pages secrètes */
@@ -68,6 +75,10 @@ pre {
   max-width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   color: black;
+
+  /* Ajouts pour scroll */
+  overflow-y: auto;
+  max-height: 50vh;
 }
 
 /* Label centré */
@@ -94,21 +105,21 @@ button {
 /* Positionnement en bas */
 .btn-bottom-left {
   position: fixed;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 2rem;
+  left: 2rem;
   width: auto;
 }
 
 .btn-bottom-right {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   width: auto;
 }
 
 .btn-bottom-center {
   position: fixed;
-  bottom: 1rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
@@ -179,4 +190,19 @@ input, select {
   border-radius: 10px;
 }
 
+/* Images */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  flex-wrap: wrap; /* permet le retour à la ligne si l'écran est trop petit */
+}
+
+.image-row img {
+  width: 30%;
+  max-width: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 

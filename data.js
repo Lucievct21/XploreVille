@@ -60,8 +60,8 @@ const data = {
       },
       introText: {
         fr: "Bonjour et bienvenue dans cette balade au cœur de Rome. Aujourd’hui, on part à la découverte de Testaccio, un quartier encore un peu à l’écart des sentiers touristiques, mais adoré des Romains. Entre histoire antique, héritage industriel, et cuisine bien vivante, tu verras : ici, chaque coin de rue a une histoire à raconter. Prêt ? Alors on y va !",
-        en: "Welcome to Testaccio.",
-        it: "Benvenuti a Testaccio."
+        en: "Hello and welcome to this walk through the heart of Rome. Today, we’re off to explore Testaccio, a neighborhood still slightly off the tourist trail, but beloved by Romans. Between ancient history, industrial heritage, and vibrant cuisine, you’ll see: every corner here has a story to tell. Ready? Let’s go!",
+        it: "Ciao e benvenuto in questa passeggiata nel cuore di Roma. Oggi andiamo alla scoperta di Testaccio, un quartiere ancora un po’ fuori dai percorsi turistici, ma molto amato dai romani. Tra storia antica, eredità industriale e cucina vivace, vedrai: ogni angolo qui ha una storia da raccontare. Pronto? Allora andiamo!"
       },
       endAudio: {
         fr: "assets/audio/fr_ch1_intro.mp3",
@@ -70,8 +70,8 @@ const data = {
       },
       endText: {
         fr: "Et voilà, la balade touche à sa fin. J’espère qu’elle t’a plu, et que tu as apprécié découvrir Testaccio, ce quartier unique où l’histoire, la gastronomie et la vie locale se réunissent. Merci d’avoir marché avec moi, et à très bientôt pour une prochaine exploration romaine !",
-        en: "End of the walk. Bye!",
-        it: "Fine della passegiata. Ciao e alla prossima!"
+        en: "And here we are, the walk is coming to an end. I hope you enjoyed it and liked discovering Testaccio, this unique neighborhood where history, food, and local life come together.Thank you for walking with me, and see you soon for another Roman adventure!",
+        it: "Ecco, la passeggiata sta per finire. Spero ti sia piaciuta e che ti sia divertito a scoprire Testaccio, questo quartiere unico dove storia, gastronomia e vita locale si incontrano. Grazie per aver camminato con me, e a presto per una nuova esplorazione romana!"
       },
       sections: [
         {
@@ -82,9 +82,9 @@ const data = {
             it: "assets/audio/it_ch1_s1.mp3"
           },
           textFile: {
-            fr: "assets/texts/Test_fichier_texte.txt",
-            en: "assets/texts/en/ch1_s1.txt",
-            it: "assets/texts/it/ch1_s1.txt"
+            fr: "assets/texts/fr/fr_testaccio_s1.txt",
+            en: "assets/texts/en/en_testaccio_s1.txt",
+            it: "assets/texts/it/it_testaccio_s1.txt"
           }
         },
         {
@@ -95,9 +95,9 @@ const data = {
             it: "assets/audio/it_ch1_s2.mp3"
           },
           textFile: {
-            fr: "assets/texts/fr/ch1_s2.txt",
-            en: "assets/texts/en/ch1_s2.txt",
-            it: "assets/texts/it/ch1_s2.txt"
+            fr: "assets/texts/fr/fr_testaccio_s2.txt",
+            en: "assets/texts/en/en_testaccio_s2.txt",
+            it: "assets/texts/it/it_testaccio_s2.txt"
           }
         },
         {
@@ -108,9 +108,9 @@ const data = {
             it: "assets/audio/it_ch1_s3.mp3"
           },
           textFile: {
-            fr: "assets/texts/fr/ch1_s3.txt",
-            en: "assets/texts/en/ch1_s3.txt",
-            it: "assets/texts/it/ch1_s3.txt"
+            fr: "assets/texts/fr/fr_testaccio_s3.txt",
+            en: "assets/texts/en/en_testaccio_s3.txt",
+            it: "assets/texts/it/it_testaccio_s3.txt"
           }
         },
         {
@@ -121,9 +121,9 @@ const data = {
             it: "assets/audio/it_ch1_s4.mp3"
           },
           textFile: {
-            fr: "assets/texts/fr/ch1_s4.txt",
-            en: "assets/texts/en/ch1_s4.txt",
-            it: "assets/texts/it/ch1_s4.txt"
+            fr: "assets/texts/fr/fr_testaccio_s4.txt",
+            en: "assets/texts/en/en_testaccio_s4.txt",
+            it: "assets/texts/it/it_testaccio_s4.txt"
           }
         },
         {
@@ -134,9 +134,9 @@ const data = {
             it: "assets/audio/it_ch1_s5.mp3"
           },
           textFile: {
-            fr: "assets/texts/fr/ch1_s5.txt",
-            en: "assets/texts/en/ch1_s5.txt",
-            it: "assets/texts/it/ch1_s5.txt"
+            fr: "assets/texts/fr/fr_testaccio_s5.txt",
+            en: "assets/texts/en/en_testaccio_s5.txt",
+            it: "assets/texts/it/it_testaccio_s5.txt"
           }
         },
         {
@@ -147,9 +147,9 @@ const data = {
             it: "assets/audio/it_ch1_s6.mp3"
           },
           textFile: {
-            fr: "assets/texts/fr/ch1_s6.txt",
-            en: "assets/texts/en/ch1_s6.txt",
-            it: "assets/texts/it/ch1_s6.txt"
+            fr: "assets/texts/fr/fr_testaccio_s6.txt",
+            en: "assets/texts/en/en_testaccio_s6.txt",
+            it: "assets/texts/it/it_testaccio_s6.txt"
           }
         },
         {
@@ -160,9 +160,22 @@ const data = {
             it: "assets/audio/it_ch1_s7.mp3"
           },
           textFile: {
-            fr: "assets/texts/fr/ch1_s7.txt",
-            en: "assets/texts/en/ch1_s7.txt",
-            it: "assets/texts/it/ch1_s7.txt"
+            fr: "assets/texts/fr/fr_testaccio_s7.txt",
+            en: "assets/texts/en/en_testaccio_s7.txt",
+            it: "assets/texts/it/it_testaccio_s7.txt"
+          }
+        },
+        {
+          number: 8,
+          audio: {
+            fr: "assets/audio/fr_ch1_s8.mp3",
+            en: "assets/audio/en_ch1_s8.mp3",
+            it: "assets/audio/it_ch1_s8mp3"
+          },
+          textFile: {
+            fr: "assets/texts/fr/fr_testaccio_s8.txt",
+            en: "assets/texts/en/en_testaccio_s8.txt",
+            it: "assets/texts/it/it_testaccio_s8.txt"
           }
         },
       ]
@@ -235,49 +248,54 @@ const secretWalkTestaccio = {
     it: "Sono entrato"
   },
   pageBEnigma: {
-    fr: "Bienvenue dans la “Città dell'altra economia” ou cité de l'économie alternative etc... énigme à trouver. Combien de crochets apperçois-tu ? Pour l'instant la bonne réponse est 0.",
-    en: "Welcome to the “Città dell'altra economia”, the city of alternative economy… and more. A little riddle awaits you: how many hooks can you spot? For now, the correct answer is zero.",
-    it: "Benvenuto nella “Città dell’Altra Economia”, la città dell’economia alternativa… e non solo. Un’indagine ti aspetta: quanti ganci riesci a vedere? Per ora, la risposta giusta è zero."
+    fr: "Bienvenue dans la “Città dell'altra economia” ou cité de l'économie alternative, un lieu jeune et branché où se sont installés plusieurs cafés et associations. Sur ta gauche au loin, tu aperçois le gazomètre, symbole du quartier voisin, Ostiense. Sur ta droite, trouve l'entrée secrète vers le Mattatoio... <br>Tu arrives devant le “Macello 3” - combien de crochets comptes-tu en face de toi ?",
+    en: "Welcome to the “Città dell'altra economia”, the city of alternative economy, a cool and creative spot that's home to cafés and local organizations. On your left in the distance, you can see the Gasometer, symbol of the nearby Ostiense district. On your right, look for the secret entrance to the Mattatoio... <br>You're now standing in front of the “Macello 3” - how many hooks can you count in front of you?",
+    it: "Benvenuto nella “Città dell’Altra Economia”, un luogo giovane e alternativo, dove si sono stabiliti caffè e associazioni. Alla tua sinistra, in lontananza, puoi vedere il Gazometro, simbolo del vicino quartiere Ostiense. Alla tua destra, cerca l'ingresso segreto... <br>Sei ora di fronte al “Macello 3” - quanti ganci riesci a contare davanti a te?"
   },
   pageCEnigma: {
-    fr: "Traverse le passage sous le bovin et continue ton chemin le long des amphores. Après l'invasion américaine, tourne à gauche.",
-    en: "Walk through the passage under the bovine and continue along the amphorae. After the American invasion, turn left.",
-    it: "Attraversa il passaggio sotto il bovino e prosegui lungo le anfore. Dopo l’invasione americana, gira a sinistra."
+    fr: "Longe le laboratoire, tourne à gauche, puis à droite. Fuis ce lieu par la grande porte et retrouve ta liberté, sain et sauf. <br>En face, les lieux de consommation des victimes du Mattatoio. De quand date le plus ancien ?",
+    en: "Walk along the laboratory, turn left, then right. Escape this place through the big gate and regain your freedom, safe and sound. <br>In front of you, the places where the Mattatoio's victims were consumed. How old is the oldest one?",
+    it: "Costeggia il laboratorio, gira a sinistra, poi a destra. Fuggi da questo luogo attraverso il grande portone e riconquista la tua libertà, sano e salvo. <br>Di fronte a te, i luoghi di consumo delle vittime del Mattatoio. Di quando è il più antico?"
   },
-  pageCButton: {
+  pageDEnigma: {
+    fr: "Checchino fait partie des restaurants spécialisés, encore aujourd'hui, dans la cuisine du “quinto quarto” : trippes, intestins, cervelles, coeurs... rien ne se perd ! <br>A présent, continue ton chemin le long des amphores. Après l'invasion américaine, tourne à gauche.",
+    en: "Checchino is one of the restaurants still specializing today in “quinto quarto” cuisine: tripe, intestines, brains, hearts... nothing goes to waste! <br>Now, keep walking along the amphorae. After the American invasion, turn left.",
+    it: "Checchino è uno dei ristoranti che ancora oggi propone la cucina del “quinto quarto”: trippa, intestini, cervelli, cuori... non si butta via niente! <br>Ora, prosegui lungo le anfore. Dopo l’invasione americana, gira a sinistra."
+  },
+  pageDButton: {
     fr: "J'ai tourné",
     en: "I turned",
     it: "Ho girato"
   },
-  pageDEnigma: {
+  pageEEnigma: {
     fr: "Sur le mur d'en face, celle qui a éduqué les fondateurs de la ville éternelle.",
     en: "On the wall opposite, the one who raised the founders of the Eternal City.",
     it: "Sul muro di fronte, quella che ha educato i fondatori della Città Eterna."
   },
-  pageDAnswer: {
+  pageEAnswer: {
     fr: "louve",
     en: "walf",
     it: "lupa"
   },
-  pageEEnigma: {
-    fr: "Tu es juste à côté du marché de Testaccio ! N'hésite pas y faire une petite pause gourmande et reviens à ta position. <br> Tourne le dos aux amphores et avance, Nord toute, jusqu'à atteindre les confins du territoire.",
-    en: "You're right next to the Testaccio market! Don’t hesitate to take a tasty little break, then return to your position. <br> Turn your back to the amphorae and head north, straight ahead, until you reach the edge of the territory.",
-    it: "Sei proprio accanto al mercato di Testaccio! Non esitare a fare una piccola pausa golosa e poi torna alla tua posizione. <br> Gira le spalle alle anfore e vai avanti, a nord, fino a raggiungere i confini del territorio."
-  },
-  pageEButton: {
-    fr: "Je suis au bord",
-    en: "I'm at the edge",
-    it: "Sono al bordo"
-  },
   pageFEnigma: {
-    fr: "On se trouve sur le Lungotevere qui borde le Tibre et délimite le quartier de Testaccio à l'Ouest et au Nord. <br> Suis le cours d'eau en direction des drapeaux et avance jusqu'à la via... charade à ajouter. Pour l'instant la réponse est “charade”.",
-    en: "We are on the Lungotevere, which runs along the Tiber and marks the western and northern boundaries of the Testaccio district. <br> Follow the waterway towards the flags and continue until you reach via... (charade to be added). For now, the answer is “charade.”",
-    it: "Siamo sul Lungotevere, che costeggia il Tevere e delimita il quartiere Testaccio a ovest e a nord. <br> Segui il corso d’acqua verso le bandiere e prosegui fino a via... (charade da aggiungere). Per ora la risposta è “charade”."
+    fr: "Tu es juste à côté du marché de Testaccio ! N'hésite pas y faire une petite pause gourmande et reviens à ta position. <br> Tourne le dos aux amphores et avance, Nord toute, jusqu'à apercevoir le fameux méridien :",
+    en: "You're right next to the Testaccio market! Don’t hesitate to take a tasty little break, then return to your position. <br> Turn your back to the amphorae and head north, straight ahead, until you spot the famous meridian:",
+    it: "Sei proprio accanto al mercato di Testaccio! Non esitare a fare una piccola pausa golosa e poi torna alla tua posizione. <br> Gira le spalle alle anfore e vai avanti, a nord, fino a scorgere il famoso meridiano:"
+  },
+  pageFAnswer: {
+    fr: "greenwich",
+    en: "greenwich",
+    it: "greenwich"
   },
   pageGEnigma: {
-    fr: "Emprunte cette rue vers le Porticus Aemilia. Combien de clous pour le maintenir debout ? Pour l'instant la bonne réponse est 0.",
-    en: "Take this street towards the Porticus Aemilia. How many nails does it take to keep it standing? For now, the correct answer is 0.",
-    it: "Prendi questa strada verso il Porticus Aemilia. Quanti chiodi servono per mantenerlo in piedi? Per ora la risposta corretta è 0."
+    fr: "Greenwich est le cinéma du quartier. Passe devant puis tourne à gauche sur la rue de...",
+    en: "Greenwich is the neighborhood's cinema. Walk past it, then turn left onto the street of...",
+    it: "Il Greenwich è il cinema del quartiere. Passaci davanti, poi gira a sinistra nella via di..."
+  },
+  pageGAnswer: {
+    fr: "nicola",
+    en: "nicola",
+    it: "nicola"
   },
   pageHEnding: {
     fr: "Bravo ! Tu es arrivé à la fin de cette aventure secrète. Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice où t'attend la fin de la balade.",

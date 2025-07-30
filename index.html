@@ -62,7 +62,7 @@
   <!-- PAGE secrète A -->
   <section id="secret-a-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Entre avec respect, liberté et courage…</pre>
+    <p id="secret-a-text"></p>
     <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
     <button id="to-secret-b" class="btn-answer-center">Je suis entré.</button>
   </section>
@@ -70,7 +70,7 @@
   <!-- PAGE secrète B -->
   <section id="secret-b-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Bienvenue dans la "città dell'altra economia" ou cité de l'économie alternative etc... énigme à trouver. Combien de crochets apperçois-tu ? Pour l'instant la bonne réponse est 0.</pre>
+    <p id="secret-b-text"></p>
     <input type="number" id="secret-b-answer"/>
     <button id="check-secret-b-answer" class="btn-answer-center btn-small">OK</button>
     <p id="secret-b-feedback"></p>
@@ -80,33 +80,35 @@
   <!-- PAGE secrète C -->
   <section id="secret-c-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Traverse le passage sous le bovin et continue ton chemin le long des amphores. Après l'invasion américaine, tourne à gauche.</pre>
+    <p id="secret-c-text"></p>
+    <input type="number" id="secret-c-answer"/>
+    <button id="check-secret-c-answer" class="btn-answer-center btn-small">OK</button>
+    <p id="secret-c-feedback"></p>
     <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
-    <button id="to-secret-d" class="btn-answer-center">J'ai tourné.</button>
   </section>
 
   <!-- PAGE secrète D -->
   <section id="secret-d-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Sur le mur d'en face, celle qui a éduqué les fondateurs de la ville éternelle.</pre>
-    <input type="text" id="secret-d-answer" />
-    <button id="check-secret-d-answer" class="btn-answer-center btn-small">OK</button>
-    <p id="secret-d-feedback"></p>
+    <p id="secret-d-text"></p>
     <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
+    <button id="to-secret-e" class="btn-answer-center">J'ai tourné.</button>
   </section>
 
   <!-- PAGE secrète E -->
   <section id="secret-e-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Tu es juste à côté du marché de Testaccio ! N'hésite pas y faire une petite pause gourmande et reviens à ta position. <br> Tourne le dos aux amphores et avance, Nord toute, jusqu'à atteindre les confins du territoire.</pre>
+    <p id="secret-e-text"></p>
+    <input type="text" id="secret-e-answer" />
+    <button id="check-secret-e-answer" class="btn-answer-center btn-small">OK</button>
+    <p id="secret-e-feedback"></p>
     <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
-    <button id="to-secret-f"class="btn-answer-center">Je suis au bord.</button>
   </section>
 
   <!-- PAGE secrète F -->
   <section id="secret-f-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>On se trouve sur le lungotevere qui borde le Tibre et délimite le quartier de Testaccio à l'Ouest et au Nord. <br> Suis le cours d'eau en direction des drapeaux et avance jusqu'à la via... charade à ajouter. Pour l'instant la réponse est "charade".</pre>
+    <p id="secret-f-text"></p>
     <input type="text" id="secret-f-answer" />
     <button id="check-secret-f-answer" class="btn-answer-center btn-small">OK</button>
     <p id="secret-f-feedback"></p>
@@ -116,8 +118,13 @@
   <!-- PAGE secrète G -->
   <section id="secret-g-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Emprunte cette rue vers le Porticus Aemilia. Combien de clous pour le maintenir debout ? Pour l'instant la bonne réponse est 0.</pre>
-    <input type="number" id="secret-g-answer" />
+    <p id="secret-g-text"></p>
+    <div class="image-row">
+      <img src="assets/images/image_nid.jpg" alt="Image nid" />
+      <img src="assets/images/image_col.jpg" alt="Image col" />
+      <img src="assets/images/image_A.jpg" alt="Image A" />
+    </div>
+    <input type="text" id="secret-g-answer" />
     <button id="check-secret-g-answer" class="btn-answer-center btn-small">OK</button>
     <p id="secret-g-feedback"></p>
     <button class="back-to-numbers btn-bottom-left btn-icon">🔢</button>
@@ -126,7 +133,7 @@
   <!-- PAGE secrète H -->
   <section id="secret-h-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
-    <pre>Bravo ! Tu es arrivé à la fin de cette aventure secrète. Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice où t'attend la fin de la balade.</pre>
+    <p id="secret-h-text"></p>
     <button class="back-to-numbers btn-bottom-center btn-icon">🔢</button>
   </section>
 
