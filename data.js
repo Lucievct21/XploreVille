@@ -54,7 +54,7 @@ const data = {
         it: "Testaccio"
       },
       introAudio: {
-        fr: "assets/audio/fr_ch1_intro.mp3",
+        fr: "assets/audio/fr/fr_testaccio_intro.mp3",
         en: "assets/audio/en_ch1_intro.mp3",
         it: "assets/audio/it_ch1_intro.mp3"
       },
@@ -64,9 +64,9 @@ const data = {
         it: "Ciao e benvenuto in questa passeggiata nel cuore di Roma. Oggi andiamo alla scoperta di Testaccio, un quartiere ancora un po’ fuori dai percorsi turistici, ma molto amato dai romani. Tra storia antica, eredità industriale e cucina vivace, vedrai: ogni angolo qui ha una storia da raccontare. Pronto? Allora andiamo!"
       },
       endAudio: {
-        fr: "assets/audio/fr_ch1_intro.mp3",
-        en: "assets/audio/en_ch1_intro.mp3",
-        it: "assets/audio/it_ch1_intro.mp3"
+        fr: "assets/audio/fr/fr_testaccio_fin.mp3",
+        en: "assets/audio/en_ch1_fin.mp3",
+        it: "assets/audio/it_ch1_fin.mp3"
       },
       endText: {
         fr: "Et voilà, la balade touche à sa fin. J’espère qu’elle t’a plu, et que tu as apprécié découvrir Testaccio, ce quartier unique où l’histoire, la gastronomie et la vie locale se réunissent. Merci d’avoir marché avec moi, et à très bientôt pour une prochaine exploration romaine !",
@@ -77,7 +77,7 @@ const data = {
         {
           number: 1,
           audio: {
-            fr: "assets/audio/Test_explore_ville.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s1.mp3",
             en: "assets/audio/en_ch1_s1.mp3",
             it: "assets/audio/it_ch1_s1.mp3"
           },
@@ -90,7 +90,7 @@ const data = {
         {
           number: 2,
           audio: {
-            fr: "assets/audio/fr_ch1_s2.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s2.m4a",
             en: "assets/audio/en_ch1_s2.mp3",
             it: "assets/audio/it_ch1_s2.mp3"
           },
@@ -103,7 +103,7 @@ const data = {
         {
           number: 3,
           audio: {
-            fr: "assets/audio/fr_ch1_s3.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s3.mp3",
             en: "assets/audio/en_ch1_s3.mp3",
             it: "assets/audio/it_ch1_s3.mp3"
           },
@@ -116,7 +116,7 @@ const data = {
         {
           number: 4,
           audio: {
-            fr: "assets/audio/fr_ch1_s4.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s4.mp3",
             en: "assets/audio/en_ch1_s4.mp3",
             it: "assets/audio/it_ch1_s4.mp3"
           },
@@ -129,7 +129,7 @@ const data = {
         {
           number: 5,
           audio: {
-            fr: "assets/audio/fr_ch1_s5.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s5.mp3",
             en: "assets/audio/en_ch1_s5.mp3",
             it: "assets/audio/it_ch1_s5.mp3"
           },
@@ -142,7 +142,7 @@ const data = {
         {
           number: 6,
           audio: {
-            fr: "assets/audio/fr_ch1_s6.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s6.mp3",
             en: "assets/audio/en_ch1_s6.mp3",
             it: "assets/audio/it_ch1_s6.mp3"
           },
@@ -155,7 +155,7 @@ const data = {
         {
           number: 7,
           audio: {
-            fr: "assets/audio/fr_ch1_s7.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s7.m4a",
             en: "assets/audio/en_ch1_s7.mp3",
             it: "assets/audio/it_ch1_s7.mp3"
           },
@@ -168,7 +168,7 @@ const data = {
         {
           number: 8,
           audio: {
-            fr: "assets/audio/fr_ch1_s8.mp3",
+            fr: "assets/audio/fr/fr_testaccio_s8.mp3",
             en: "assets/audio/en_ch1_s8.mp3",
             it: "assets/audio/it_ch1_s8mp3"
           },
