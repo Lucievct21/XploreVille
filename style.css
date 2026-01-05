@@ -3,7 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 1rem;
-  background-color: #f2f2f2;
+  background-color: #f6f1eb;
+  color: #3b3b3b;
   text-align: center;
   font-size: 1.2rem; /* taille de texte adaptée mobile */
   line-height: 1.6;
@@ -13,12 +14,12 @@ body {
 section {
   margin: 0 auto;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cbb8a6;
   border-radius: 10px;
-  background-color: #eeeeee;
+  background-color: #f2ebe4;
   max-width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  
+
   /* Ajouts pour scroll */
   position: relative;
   height: 90dvh;
@@ -29,21 +30,29 @@ section {
 
 /* Style pour la section des pages secrètes */
 .secret-section {
-  background-color: #cfe2f3ff;
-  color: #333;
+  background-color: #dce7f3;
+  color: #3b3b3b;
   font-style: italic;
 }
 
 /* Titres */
-h1, h2 {
+h1 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+  color: #7a2d12;
+}
+
+h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #595959;
+  color: #7a2d12;
 }
 
 /* Style pour le titre des pages secrètes */
 .secret-title {
-  color: #333;
+  color: #7a2d12;
   font-style: italic;
 }
 
@@ -62,19 +71,25 @@ audio {
   color-scheme: light;
 }
 
+audio::-webkit-media-controls-play-button {
+  transform: scale(1.8);
+  margin-right: 0.5rem;
+}
+
+
 /* Préformatté */
 pre {
   white-space: pre-wrap;
   text-align: center;
   font-size: 1rem;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem auto;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cbb8ab;
   border-radius: 10px;
-  background-color: white;
+  background-color: #ffffff;
   max-width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  color: black;
+  color: #3b3b3b;
 
   /* Ajouts pour scroll */
   overflow-y: auto;
@@ -92,21 +107,26 @@ label {
 /* Boutons */
 button {
   display: block;
-  width: 90%;
   margin: 0.5rem auto;
   padding: 0.8rem;
   font-size: 1rem;
   border-radius: 6px;
   border: none;
-  background-color: #333;
-  color: white;
+}
+
+.btn-answer-center,
+.btn-chapter,
+.btn-testaccio {
+  width: 90%;
+  background-color: #7a2d12;
+  color: #ffffff;
 }
 
 /* Positionnement en bas */
 .btn-bottom-left {
   position: fixed;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 1rem;
+  left: 1rem;
   width: auto;
 }
 
@@ -115,11 +135,17 @@ button {
   bottom: 2rem;
   right: 2rem;
   width: auto;
+  transform-origin: bottom right;
+}
+
+.btn-bottom-right:not(.btn-icon) {
+  background-color: #7a2d12;
+  color: #fff;
 }
 
 .btn-bottom-center {
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
@@ -155,18 +181,20 @@ button {
   margin: 1rem auto;
   padding: 1rem;
   font-size: 1.2rem;
-  border: 1px solid #595959;
-  background-color: #fff2ccff;
-  color: #595959;
+  border: 2px solid #6b7a7a;
+  background-color: #e6e6e6;
+  color: #444;
+  font-weight: 600;
 }
 
 .btn-testaccio {
   margin: 1rem auto;
   padding: 1rem;
   font-size: 1.2rem;
-  border: 1px solid #595959;
-  background-color: #f4ccccff;
-  color: #595959;
+  border: 2px solid #2f6f95;
+  background-color: #cfe0eb;
+  color: #2f6f95;
+  font-weight: 600;
 }
 
 /* Inputs et selects */
@@ -181,13 +209,38 @@ input, select {
 /* Input centré et plus gros */
 .number-input-centered {
   display: block;
-  margin: 2rem auto 1rem auto;
-  width: 100px;
-  height: 100px;
+  margin: 1.2rem auto 0.8rem auto;
+  width: 90px;
+  height: 70px;
   font-size: 2rem;
   text-align: center;
-  border: 2px solid #aaa;
+  border: 2px solid #7a2d12;
   border-radius: 10px;
+  background-color: #fff;
+}
+
+.number-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 52px);
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.num-btn {
+  font-size: 1.2rem;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 10px;
+  border: 2px solid #7a2d12;
+  background-color: #d8c3a5;
+  color: #3b2a1a;
+  font-weight: bold;
+}
+
+.num-btn:hover {
+  background-color: #c4aa8a;
 }
 
 /* Images */
@@ -206,3 +259,70 @@ input, select {
   object-fit: cover;
 }
 
+.secret-image {
+  display: block;
+  margin: 1.5rem auto;
+  width: 40%;
+  max-width: 140px;
+  border-radius: 10px;
+}
+
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Popup */
+.confirm-popup {
+  background: #f6efe6;
+  border: 2px solid #7a2d12;
+  border-radius: 14px;
+  padding: 2rem;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Texte */
+.confirm-popup p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #3b2a1a;
+}
+
+/* Boutons */
+.confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.confirm-actions .btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.primary {
+  background: #7a2d12;
+  color: white;
+}
+
+.btn.secondary {
+  background: #ddd;
+  color: #333;
+}

@@ -17,6 +17,8 @@ const backToHome3Btn = document.getElementById("back-to-home-3");
 const backToNumberPageBtn = document.getElementById("back-to-number-page");
 const loadSectionBtn = document.getElementById("load-section");
 const sectionNumberInput = document.getElementById("section-number");
+const numButtons = document.querySelectorAll(".num-btn");
+const clearBtn = document.getElementById("clear-number");
 const secretButton = document.getElementById("secret-button");
 const endBtn = document.getElementById("go-to-end-page");
 
@@ -54,7 +56,7 @@ function displayChapterList() {
     } else {
       button.classList.add("btn-chapter");
     }
-    
+
     button.addEventListener("click", () => {
       currentChapter = chapter;
       showIntroPage(currentChapter, currentLanguage);
@@ -79,11 +81,13 @@ languageSelect.addEventListener("change", () => {
 
 goToNumberPageBtn.addEventListener("click", () => {
   updateUIText();
+  pauseAudio(introAudio);
   showNumberPage(currentChapter, currentLanguage);
 });
 
 backToHome1Btn.addEventListener("click", () => {
   updateUIText();
+  pauseAudio(introAudio);
   showStartPage();
 });
 backToHome2Btn.addEventListener("click", () => {
@@ -92,16 +96,38 @@ backToHome2Btn.addEventListener("click", () => {
 });
 backToHome3Btn.addEventListener("click", () => {
   updateUIText();
+  pauseAudio(endAudio);
   showStartPage();
 });
 backToNumberPageBtn.addEventListener("click", () => {
   updateUIText();
+  pauseAudio(sectionAudio);
   showNumberPage(currentChapter, currentLanguage);
 });
+
 backToNumbersBtns.forEach(btn => {
   btn.addEventListener("click", () => {
-    updateUIText();
-    showNumberPage(currentChapter, currentLanguage);
+    const message =
+      currentLanguage === "en"
+        ? "You are about to leave the secret walk. Continue?"
+        : currentLanguage === "it"
+        ? "Stai per lasciare il percorso segreto. Continuare?"
+        : "Tu es sur le point de quitter le parcours secret. Continuer ?";
+    showConfirmPopup(message, () => {
+      updateUIText();
+      showNumberPage(currentChapter, currentLanguage);
+    });
+  });
+});
+
+numButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const val = btn.textContent;
+    if (val === "C") {
+      sectionNumberInput.value = "";
+    } else {
+      sectionNumberInput.value += val;
+    }
   });
 });
 
@@ -118,7 +144,10 @@ loadSectionBtn.addEventListener("click", () => {
 });
 
 // boutons pages secrètes
-secretButton.addEventListener("click", showSecretAPage);
+secretButton.addEventListener("click", () => {
+  showSecretAPage();
+  pauseAudio(sectionAudio);
+});
 toSecretBBtn.addEventListener("click", showSecretBPage);
 toSecretEBtn.addEventListener("click", showSecretEPage);
 
@@ -168,7 +197,7 @@ checkSecretEAnswerBtn.addEventListener("click", () => {
         secretEFeedback.textContent = "Mauvaise réponse, essaye encore !";
         }
   } else if (currentLanguage === "en"){
-    if (answer === "walf"){
+    if (answer === "wolf" || answer === "she-wolf"){
         showSecretFPage();
     } else {
         secretEFeedback.textContent = "Wrong answer, try again!";
@@ -218,6 +247,40 @@ checkSecretGAnswerBtn.addEventListener("click", () => {
   }
 });
 
+// message popup
+function showConfirmPopup(message, onConfirm) {
+  const overlay = document.getElementById("confirm-overlay");
+  const msg = document.getElementById("confirm-message");
+  const yesBtn = document.getElementById("confirm-yes");
+  const noBtn = document.getElementById("confirm-no");
+  // Texte localisé
+  const yesText =
+    currentLanguage === "en" ? "Continue" :
+    currentLanguage === "it" ? "Continua" :
+    "Continuer";
+  const noText =
+    currentLanguage === "en" ? "Stay" :
+    currentLanguage === "it" ? "Resta" :
+    "Rester";
+  yesBtn.textContent = yesText;
+  noBtn.textContent = noText;
+  msg.textContent = message;
+  overlay.classList.remove("hidden");
+
+  const close = () => {
+    overlay.classList.add("hidden");
+    yesBtn.removeEventListener("click", confirmHandler);
+    noBtn.removeEventListener("click", close);
+  };
+
+  const confirmHandler = () => {
+    close();
+    onConfirm();
+  };
+
+  yesBtn.addEventListener("click", confirmHandler);
+  noBtn.addEventListener("click", close);
+}
 
 
 // initialisation

@@ -3,7 +3,6 @@
    (par exemple lecture, pause, plus tard: volume, avance, etc.)
 */
 
-// fonctions pas utiles pour le moment mais pourraient servir plus tard
 
 function playAudio(audioElement) {
   audioElement.play();
@@ -11,4 +10,5 @@ function playAudio(audioElement) {
 
 function pauseAudio(audioElement) {
   audioElement.pause();
+  audioElement.currentTime=0;
 }

@@ -248,19 +248,19 @@ const secretWalkTestaccio = {
     it: "Sono entrato"
   },
   pageBEnigma: {
-    fr: "Bienvenue dans la “Città dell'altra economia” ou cité de l'économie alternative, un lieu jeune et branché où se sont installés plusieurs cafés et associations. Sur ta gauche au loin, tu aperçois le gazomètre, symbole du quartier voisin, Ostiense. Sur ta droite, trouve l'entrée secrète vers le Mattatoio... <br>Tu arrives devant le “Macello 3” - combien de crochets comptes-tu en face de toi ?",
-    en: "Welcome to the “Città dell'altra economia”, the city of alternative economy, a cool and creative spot that's home to cafés and local organizations. On your left in the distance, you can see the Gasometer, symbol of the nearby Ostiense district. On your right, look for the secret entrance to the Mattatoio... <br>You're now standing in front of the “Macello 3” - how many hooks can you count in front of you?",
-    it: "Benvenuto nella “Città dell’Altra Economia”, un luogo giovane e alternativo, dove si sono stabiliti caffè e associazioni. Alla tua sinistra, in lontananza, puoi vedere il Gazometro, simbolo del vicino quartiere Ostiense. Alla tua destra, cerca l'ingresso segreto... <br>Sei ora di fronte al “Macello 3” - quanti ganci riesci a contare davanti a te?"
+    fr: "Bienvenue dans la “Città dell'altra economia” ou cité de l'économie alternative, un lieu jeune et branché où se sont installés plusieurs cafés et associations. Sur ta gauche au loin, tu aperçois le gazomètre, symbole du quartier voisin, Ostiense. Sur ta droite, trouve l'entrée secrète vers le Mattatoio et avance... <br>Tu arrives devant le “Macello 3” - combien de crochets comptes-tu en face de toi ?",
+    en: "Welcome to the “Città dell'altra economia”, the city of alternative economy, a cool and creative spot that's home to cafés and local organizations. On your left in the distance, you can see the Gasometer, symbol of the nearby Ostiense district. On your right, look for the secret entrance to the Mattatoio and move forward... <br>You're now standing in front of the “Macello 3” - how many hooks can you count in front of you?",
+    it: "Benvenuto nella “Città dell’Altra Economia”, un luogo giovane e alternativo, dove si sono stabiliti caffè e associazioni. Alla tua sinistra, in lontananza, puoi vedere il Gazometro, simbolo del vicino quartiere Ostiense. Alla tua destra, trovaa l'ingresso segreto e avanza... <br>Sei ora di fronte al “Macello 3” - quanti ganci riesci a contare davanti a te?"
   },
   pageCEnigma: {
-    fr: "Longe le laboratoire, tourne à gauche, puis à droite. Fuis ce lieu par la grande porte et retrouve ta liberté, sain et sauf. <br>En face, les lieux de consommation des victimes du Mattatoio. De quand date le plus ancien ?",
-    en: "Walk along the laboratory, turn left, then right. Escape this place through the big gate and regain your freedom, safe and sound. <br>In front of you, the places where the Mattatoio's victims were consumed. How old is the oldest one?",
-    it: "Costeggia il laboratorio, gira a sinistra, poi a destra. Fuggi da questo luogo attraverso il grande portone e riconquista la tua libertà, sano e salvo. <br>Di fronte a te, i luoghi di consumo delle vittime del Mattatoio. Di quando è il più antico?"
+    fr: "Bien joué ! <br> Maintenant, atteint le pavillon 1, tourne à gauche, puis à droite. Fuis ce lieu par la grande porte et retrouve ta liberté, sain et sauf. <br>En face, les lieux de consommation des victimes du Mattatoio. De quand date le plus ancien ?",
+    en: "Well done! <br> Now reach pavilion 1, turn left, then right. Escape this place through the big gate and regain your freedom, safe and sound. <br>In front of you, the places where the Mattatoio's victims were consumed. How old is the oldest one?",
+    it: "Ben fatto! <br> Ora raggiungi il padiglione 1, gira a sinistra, poi a destra. Fuggi da questo luogo attraverso il grande portone e riconquista la tua libertà, sano e salvo. <br>Di fronte a te, i luoghi di consumo delle vittime del Mattatoio. Di quando è il più antico?"
   },
   pageDEnigma: {
-    fr: "Checchino fait partie des restaurants spécialisés, encore aujourd'hui, dans la cuisine du “quinto quarto” : trippes, intestins, cervelles, coeurs... rien ne se perd ! <br>A présent, continue ton chemin le long des amphores. Après l'invasion américaine, tourne à gauche.",
-    en: "Checchino is one of the restaurants still specializing today in “quinto quarto” cuisine: tripe, intestines, brains, hearts... nothing goes to waste! <br>Now, keep walking along the amphorae. After the American invasion, turn left.",
-    it: "Checchino è uno dei ristoranti che ancora oggi propone la cucina del “quinto quarto”: trippa, intestini, cervelli, cuori... non si butta via niente! <br>Ora, prosegui lungo le anfore. Dopo l’invasione americana, gira a sinistra."
+    fr: "Exact ! Checchino fait partie des restaurants spécialisés, encore aujourd'hui, dans la cuisine du “quinto quarto” : trippes, intestins, cervelles, coeurs... rien ne se perd ! <br>A présent, continue ton chemin le long des amphores. Après l'invasion américaine, tourne à gauche.",
+    en: "Exactly! Checchino is one of the restaurants still specializing today in “quinto quarto” cuisine: tripe, intestines, brains, hearts... nothing goes to waste! <br>Now, keep walking along the amphorae. After the American invasion, turn left.",
+    it: "Esatto! Checchino è uno dei ristoranti che ancora oggi propone la cucina del “quinto quarto”: trippa, intestini, cervelli, cuori... non si butta via niente! <br>Ora, prosegui lungo le anfore. Dopo l’invasione americana, gira a sinistra."
   },
   pageDButton: {
     fr: "J'ai tourné",
@@ -278,9 +278,9 @@ const secretWalkTestaccio = {
     it: "lupa"
   },
   pageFEnigma: {
-    fr: "Tu es juste à côté du marché de Testaccio ! N'hésite pas y faire une petite pause gourmande et reviens à ta position. <br> Tourne le dos aux amphores et avance, Nord toute, jusqu'à apercevoir le fameux méridien :",
-    en: "You're right next to the Testaccio market! Don’t hesitate to take a tasty little break, then return to your position. <br> Turn your back to the amphorae and head north, straight ahead, until you spot the famous meridian:",
-    it: "Sei proprio accanto al mercato di Testaccio! Non esitare a fare una piccola pausa golosa e poi torna alla tua posizione. <br> Gira le spalle alle anfore e vai avanti, a nord, fino a scorgere il famoso meridiano:"
+    fr: "Bravo ! C'est bien une louve qui, selon la légende, aurait reccueilli et allaité Remus et Romulus, les fondateurs de Rome.<br>Tu te trouves maintenant juste à côté du marché de Testaccio. N'hésite pas y faire une petite pause gourmande et reviens à ta position. <br> A ton retour, tourne le dos aux amphores et avance, Nord toute, jusqu'à apercevoir le fameux méridien :",
+    en: "Great job! According to legend, it was indeed a she-wolf who took in and suckled Remus and Romulus, the founders of Rome. <br>You're now right next to the Testaccio market. Feel free to take a short gourmet break and then return to your position. <br> Once back, turn your back to the amphorae and head north, straight ahead, until you spot the famous meridian:",
+    it: "Bravo! Secondo la leggenda, fu proprio una lupa ad accogliere e allattare Remo e Romolo, i fondatori di Roma. <br>Ora ti trovi proprio accanto al mercato di Testaccio. Non esitare a fare una piccola pausa golosa e poi torna alla tua posizione. <br> Al tuo ritorno, dai le spalle alle anfore e avanza dritto, verso nord, fino a scorgere il famoso meridiano:"
   },
   pageFAnswer: {
     fr: "greenwich",
@@ -288,9 +288,26 @@ const secretWalkTestaccio = {
     it: "greenwich"
   },
   pageGEnigma: {
-    fr: "Greenwich est le cinéma du quartier. Passe devant puis tourne à gauche sur la rue de...",
-    en: "Greenwich is the neighborhood's cinema. Walk past it, then turn left onto the street of...",
-    it: "Il Greenwich è il cinema del quartiere. Passaci davanti, poi gira a sinistra nella via di..."
+    fr: "Tu as trouvé Greenwich, le cinéma du quartier ! Passe devant puis tourne à gauche sur la rue de...",
+    en: "You’ve found Greenwich, the neighborhood cinema! Walk past it, then turn left onto the street of...",
+    it: "Hai trovato il Greenwich, il cinema del quartiere! Passaci davanti, poi gira a sinistra nella via di..."
+  },
+  pageGImages: {
+    fr: [
+      "assets/images/fr/image_nid.jpg",
+      "assets/images/fr/image_col.jpg",
+      "assets/images/fr/image_A.jpg"
+    ],
+    en: [
+      "assets/images/en",
+      "assets/images/en",
+      "assets/images/en"
+    ],
+    it: [
+      "assets/images/it",
+      "assets/images/it",
+      "assets/images/it"
+    ]
   },
   pageGAnswer: {
     fr: "nicola",
@@ -298,8 +315,13 @@ const secretWalkTestaccio = {
     it: "nicola"
   },
   pageHEnding: {
-    fr: "Bravo ! Tu es arrivé à la fin de cette aventure secrète. Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice où t'attend la fin de la balade.",
-    en: "Well done! You’ve reached the end of this secret adventure. You can now head to Piazza di Santa Maria Liberatrice, where the end of the walk awaits you.",
-    it: "Bravo! Sei arrivato alla fine di questa avventura segreta. Ora puoi raggiungere la piazza di Santa Maria Liberatrice, dove ti aspetta la conclusione del percorso."
+    fr: "Félicitations ! Tu es arrivé à la fin de cette aventure secrète. <br>Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice où t'attend la fin de la balade.",
+    en: "Congratulations! You’ve reached the end of this secret adventure. <br>You can now head to Piazza di Santa Maria Liberatrice, where the end of the walk awaits you.",
+    it: "Complimenti! Sei arrivato alla fine di questa avventura segreta. <br>Ora puoi raggiungere la piazza di Santa Maria Liberatrice, dove ti aspetta la conclusione del percorso."
+  },
+  pageHImage: {
+    fr: "assets/images/loupe.png",
+    en: "assets/images/loupe.png",
+    it: "assets/images/loupe.png"
   }
 };

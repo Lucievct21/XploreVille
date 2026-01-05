@@ -43,6 +43,8 @@ const secretEText = document.getElementById("secret-e-text");
 const secretFText = document.getElementById("secret-f-text");
 const secretGText = document.getElementById("secret-g-text");
 const secretHText = document.getElementById("secret-h-text");
+const secretGImagesContainer = document.getElementById("secret-g-images");
+const secretHImage = document.getElementById("secret-h-image");
 
 // pages
 function hideAllPages() {
@@ -84,7 +86,6 @@ function showNumberPage(chapter, lang) {
 function showSectionPage(section, lang, chapterTitle) {
   hideAllPages();
   sectionPage.style.display = "block";
-
   sectionTitle.textContent = `${chapterTitle} - Audio ${section.number}`;
   sectionAudio.src = section.audio[lang];
 
@@ -92,6 +93,8 @@ function showSectionPage(section, lang, chapterTitle) {
     .then(resp => resp.text())
     .then(text => {
       sectionText.innerHTML = text;
+      // reset du scroll
+      sectionText.scrollTop = 0;
     })
     .catch(() => {
       sectionText.textContent = "Impossible de charger le texte.";
@@ -194,8 +197,15 @@ function showSecretGPage() {
     title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
   });
   secretGText.innerHTML = secretWalkTestaccio.pageGEnigma[currentLanguage];
+  secretGImagesContainer.innerHTML = "";
+  secretWalkTestaccio.pageGImages[currentLanguage].forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Indice visuel";
+    secretGImagesContainer.appendChild(img);
   secretGAnswerInput.value = "";
   secretGFeedback.textContent = "";
+  });
 }
 
 function showSecretHPage() {
@@ -205,4 +215,5 @@ function showSecretHPage() {
     title.textContent = secretWalkTestaccio.secretTitle[currentLanguage];
   });
   secretHText.innerHTML = secretWalkTestaccio.pageHEnding[currentLanguage];
+  secretHImage.src = secretWalkTestaccio.pageHImage[currentLanguage];
 }

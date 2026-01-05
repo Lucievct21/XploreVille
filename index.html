@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Explore villes</title>
+  <title>Xplore</title>
   <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
   <!-- PAGE 1 : accueil -->
   <section id="start-page">
-    <h1>Explore villes</h1>
+    <h1>Xplore Roma</h1>
     <div>
       <label id="language-label" for="language-select">Langue :</label>
       <select id="language-select">
@@ -35,7 +35,22 @@
     <h2 id="number-title"></h2>
     <div>
       <label id="number-label" for="section-number">Numéro audio :</label>
-      <input type="number" id="section-number" class="number-input-center" />
+      <div id="number-input-container" style="text-align:center;">
+        <input type="text" id="section-number" class="number-input-centered" readonly />
+        <div id="number-pad" class="number-pad">
+          <button class="num-btn">1</button>
+          <button class="num-btn">2</button>
+          <button class="num-btn">3</button>
+          <button class="num-btn">4</button>
+          <button class="num-btn">5</button>
+          <button class="num-btn">6</button>
+          <button class="num-btn">7</button>
+          <button class="num-btn">8</button>
+          <button class="num-btn">9</button>
+          <button class="num-btn">0</button>
+          <button id="clear-number" class="num-btn">C</button>
+        </div>
+      </div>
       <button id="load-section" class="btn-answer-center btn-small">OK</button>
     </div>
     <button id="back-to-home-2" class="btn-bottom-left btn-icon">🏠</button>
@@ -119,11 +134,7 @@
   <section id="secret-g-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
     <p id="secret-g-text"></p>
-    <div class="image-row">
-      <img src="assets/images/image_nid.jpg" alt="Image nid" />
-      <img src="assets/images/image_col.jpg" alt="Image col" />
-      <img src="assets/images/image_A.jpg" alt="Image A" />
-    </div>
+    <div class="image-row" id="secret-g-images"></div>
     <input type="text" id="secret-g-answer" />
     <button id="check-secret-g-answer" class="btn-answer-center btn-small">OK</button>
     <p id="secret-g-feedback"></p>
@@ -134,6 +145,7 @@
   <section id="secret-h-page" class="secret-section" style="display:none">
     <h2 class="secret-title">Testaccio - parcours secret</h2>
     <p id="secret-h-text"></p>
+    <img id="secret-h-image" class="secret-image" alt="Image fin parcours secret" />
     <button class="back-to-numbers btn-bottom-center btn-icon">🔢</button>
   </section>
 
@@ -141,5 +153,16 @@
   <script src="views.js"></script>
   <script src="player.js"></script>
   <script src="app.js"></script>
+
+  <div id="confirm-overlay" class="overlay hidden">
+    <div class="confirm-popup">
+      <p id="confirm-message"></p>
+
+      <div class="confirm-actions">
+        <button id="confirm-yes" class="btn primary"></button>
+        <button id="confirm-no" class="btn secondary"></button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
