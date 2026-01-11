@@ -105,6 +105,12 @@ backToNumberPageBtn.addEventListener("click", () => {
   showNumberPage(currentChapter, currentLanguage);
 });
 
+endBtn.addEventListener("click", () => {
+  updateUIText();
+  pauseAudio(sectionAudio);
+  showChapterEndPage(currentChapter, currentLanguage);
+});
+
 backToNumbersBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     const message =

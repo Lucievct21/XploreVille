@@ -109,7 +109,6 @@ function showSectionPage(section, lang, chapterTitle) {
   if (section.number === currentChapter.sections.length) {
     endBtn.style.display = "inline-block";
     endBtn.textContent = uiTexts.endButton[currentLanguage];
-    endBtn.onclick = () => showChapterEndPage(currentChapter,currentLanguage);
   } else {
     endBtn.style.display = "none"; 
   }

@@ -90,7 +90,7 @@ const data = {
         {
           number: 2,
           audio: {
-            fr: "assets/audio/fr/fr_testaccio_s2.m4a",
+            fr: "assets/audio/fr/fr_testaccio_s2.mp3",
             en: "assets/audio/en_ch1_s2.mp3",
             it: "assets/audio/it_ch1_s2.mp3"
           },
@@ -155,7 +155,7 @@ const data = {
         {
           number: 7,
           audio: {
-            fr: "assets/audio/fr/fr_testaccio_s7.m4a",
+            fr: "assets/audio/fr/fr_testaccio_s7.mp3",
             en: "assets/audio/en_ch1_s7.mp3",
             it: "assets/audio/it_ch1_s7.mp3"
           },
@@ -299,14 +299,14 @@ const secretWalkTestaccio = {
       "assets/images/fr/image_A.jpg"
     ],
     en: [
-      "assets/images/en",
-      "assets/images/en",
-      "assets/images/en"
+      "assets/images/en/image_knee.jpg",
+      "assets/images/en/image_call.jpg",
+      "assets/images/en/image_A.jpg"
     ],
     it: [
-      "assets/images/it",
-      "assets/images/it",
-      "assets/images/it"
+      "assets/images/it/image_nid.jpg",
+      "assets/images/it/image_col.jpg",
+      "assets/images/it/image_A.jpg"
     ]
   },
   pageGAnswer: {
