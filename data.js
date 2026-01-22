@@ -238,9 +238,9 @@ const secretWalkTestaccio = {
     it: "Testaccio - Percorso segreto"
   },
   pageAEnigma: {
-    fr: "Entre avec respect, liberté et courage…",
-    en: "Enter with respect, freedom and courage…",
-    it: "Entra con rispetto, libertà e coraggio…"
+    fr: "Sur ta gauche… Entre avec respect, liberté et courage…",
+    en: "On your left… Enter with respect, freedom and courage…",
+    it: "Alla tua sinistra… Entra con rispetto, libertà e coraggio…"
   },
   pageAButton: {
     fr: "Je suis entré",
@@ -248,9 +248,9 @@ const secretWalkTestaccio = {
     it: "Sono entrato"
   },
   pageBEnigma: {
-    fr: "Bienvenue dans la “Città dell'altra economia” ou cité de l'économie alternative, un lieu jeune et branché où se sont installés plusieurs cafés et associations. Sur ta gauche au loin, tu aperçois le gazomètre, symbole du quartier voisin, Ostiense. Sur ta droite, trouve l'entrée secrète vers le Mattatoio et avance... <br>Tu arrives devant le “Macello 3” - combien de crochets comptes-tu en face de toi ?",
-    en: "Welcome to the “Città dell'altra economia”, the city of alternative economy, a cool and creative spot that's home to cafés and local organizations. On your left in the distance, you can see the Gasometer, symbol of the nearby Ostiense district. On your right, look for the secret entrance to the Mattatoio and move forward... <br>You're now standing in front of the “Macello 3” - how many hooks can you count in front of you?",
-    it: "Benvenuto nella “Città dell’Altra Economia”, un luogo giovane e alternativo, dove si sono stabiliti caffè e associazioni. Alla tua sinistra, in lontananza, puoi vedere il Gazometro, simbolo del vicino quartiere Ostiense. Alla tua destra, trovaa l'ingresso segreto e avanza... <br>Sei ora di fronte al “Macello 3” - quanti ganci riesci a contare davanti a te?"
+    fr: "Bienvenue dans la “Città dell'altra economia” ou cité de l'économie alternative, un lieu jeune et branché où se sont installés plusieurs cafés et associations. Sur ta gauche au loin, tu aperçois une grande structure cylindrique en acier: c'est le gazomètre, symbole du quartier voisin Ostiense. Sur ta droite, entre thé et café, trouve l'entrée secrète vers le Mattatoio et avance... <br>Tu arrives devant le “Macello 3” - combien de crochets comptes-tu en face de toi ?",
+    en: "Welcome to the “Città dell'altra economia”, the city of alternative economy, a cool and creative spot that's home to cafés and local organizations. On your left in the distance, you can see a large cylindrical steel structure: this is the gasometer, symbol of the nearby Ostiense district. On your right, between tea and coffee, look for the secret entrance to the Mattatoio and move forward... <br>You're now standing in front of the “Macello 3” - how many hooks can you count in front of you?",
+    it: "Benvenuto nella “Città dell’Altra Economia”, un luogo giovane e alternativo, dove si sono stabiliti caffè e associazioni. Alla tua sinistra, in lontananza, puoi vedere una grande struttura cilindrica in acciaio: è il gazometro, simbolo del vicino quartiere Ostiense. Alla tua destra, tra tè e caffè, trova l'ingresso segreto e avanza... <br>Sei ora di fronte al “Macello 3” - quanti ganci riesci a contare davanti a te?"
   },
   pageCEnigma: {
     fr: "Bien joué ! <br> Maintenant, atteint le pavillon 1, tourne à gauche, puis à droite. Fuis ce lieu par la grande porte et retrouve ta liberté, sain et sauf. <br>En face, les lieux de consommation des victimes du Mattatoio. De quand date le plus ancien ?",
@@ -315,9 +315,9 @@ const secretWalkTestaccio = {
     it: "nicola"
   },
   pageHEnding: {
-    fr: "Félicitations ! Tu es arrivé à la fin de cette aventure secrète. <br>Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice où t'attend la fin de la balade.",
-    en: "Congratulations! You’ve reached the end of this secret adventure. <br>You can now head to Piazza di Santa Maria Liberatrice, where the end of the walk awaits you.",
-    it: "Complimenti! Sei arrivato alla fine di questa avventura segreta. <br>Ora puoi raggiungere la piazza di Santa Maria Liberatrice, dove ti aspetta la conclusione del percorso."
+    fr: "Félicitations ! Tu es arrivé à la fin de cette aventure secrète. <br>Tu peux maintenant rejoindre la piazza di Santa Maria Liberatrice au point n°6, où t'attend la fin de la balade.",
+    en: "Congratulations! You’ve reached the end of this secret adventure. <br>You can now head to Piazza di Santa Maria Liberatrice on point 6, where the end of the walk awaits you.",
+    it: "Complimenti! Sei arrivato alla fine di questa avventura segreta. <br>Ora puoi raggiungere la piazza di Santa Maria Liberatrice al punto n.6, dove ti aspetta la conclusione del percorso."
   },
   pageHImage: {
     fr: "assets/images/loupe.png",
